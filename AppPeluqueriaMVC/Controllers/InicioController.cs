@@ -8,21 +8,10 @@ namespace AppPeluqueriaMVC.Controllers
 {
     public class InicioController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public InicioController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        public InicioController(){}
 
         [HttpGet]
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Empleado.ToListAsync());
-        }
-
-        [HttpGet]
-        public IActionResult CrearEmpleado()
+        public IActionResult Index()
         {
             return View();
         }

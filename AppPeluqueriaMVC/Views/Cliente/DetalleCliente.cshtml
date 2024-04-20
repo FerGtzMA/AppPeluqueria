@@ -1,0 +1,85 @@
+﻿@model AppPeluqueriaMVC.Models.Cliente
+@{
+    ViewData["Titel"] = "Cliente";
+}
+
+
+<h1 class="text-center offset-1">Clientes</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Editar perfil</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="BorrarCliente" method="post">
+                    <input asp-for="Id" type="hidden">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="DNI" class="control-label"></label>
+                        <input asp-for="DNI" class="form-control" readonly>
+                        <span asp-validation-for="DNI" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" readonly>
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Apellido" class="control-label"></label>
+                        <input asp-for="Apellido" class="form-control" readonly>
+                        <span asp-validation-for="Apellido" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" readonly>
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calle" class="control-label"></label>
+                        <input asp-for="Calle" class="form-control" readonly>
+                        <span asp-validation-for="Calle" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Número interior</label>
+                        <input asp-for="NumInt" class="form-control" readonly>
+                        <span asp-validation-for="NumInt" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Colonia" class="control-label"></label>
+                        <input asp-for="Colonia" class="form-control" readonly>
+                        <span asp-validation-for="Colonia" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Código postal</label>
+                        <input asp-for="CodigoPostal" class="form-control" readonly>
+                        <span asp-validation-for="CodigoPostal" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ciudad" class="control-label"></label>
+                        <input asp-for="Ciudad" class="form-control" readonly>
+                        <span asp-validation-for="Ciudad" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pais" class="control-label"></label>
+                        <input asp-for="Pais" class="form-control" readonly>
+                        <span asp-validation-for="Pais" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tratamientos" class="control-label"></label>
+                        <input asp-for="Tratamientos" class="form-control" readonly>
+                        <span asp-validation-for="Tratamientos" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-danger d-block mx-auto"><i class="bi bi-person-x"></i>Eliminar cuenta</button>
+                    </div>
+                </form>
+
+                <a asp-controller="Cliente" asp-action="VistaCliente">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

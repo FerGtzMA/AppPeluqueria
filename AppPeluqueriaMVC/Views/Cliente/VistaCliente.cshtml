@@ -1,0 +1,95 @@
+﻿@model IEnumerable<AppPeluqueriaMVC.Models.Cliente>
+@{
+    ViewData["Title"] = "Lista de clientes";
+}
+
+
+<div class="row">
+    <h1 class="text-center">Empleados</h1>
+    <div class="offset-9 col-3 mb-3">
+        <a asp-action="CrearCliente" asp-controller="Cliente" class="btn btn-secondary d-block mx-auto btn-lg">
+            <i class="bi bi-file-earmark-person-fill"></i>Nuevo Cliente
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Lista de Clientes</strong></h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    @if (Model.Count() > 0)
+                    {
+                        <table class="table table-bordered" id="tblClientes" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(m => m.Id)</th>
+                                    <th>@Html.DisplayNameFor(m => m.DNI)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Nombre) @Html.DisplayNameFor(m => m.Apellido)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Telefono)</th>
+                                    <th>Domicilio</th>
+                                    <th>@Html.DisplayNameFor(m => m.Tratamientos)</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(m => item.Id)</td>
+                                        <td>@Html.DisplayFor(m => item.DNI)</td>
+                                        <td>@Html.DisplayFor(m => item.Nombre) @Html.DisplayFor(m => item.Apellido)</td>
+                                        <td>@Html.DisplayFor(m => item.Telefono)</td>
+                                        <td>@Html.DisplayFor(m => item.Calle) #@Html.DisplayFor(m => item.NumInt), @Html.DisplayFor(m => item.Colonia) @Html.DisplayFor(m => item.CodigoPostal), @Html.DisplayFor(m => item.Ciudad), @Html.DisplayFor(m => item.Pais)</td>
+                                        <th>@Html.DisplayFor(m => item.Tratamientos)</th>
+                                        <td>
+                                            <a asp-action="EditarCliente" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>
+                                            <a asp-action="DetalleCliente" asp-route-id="@item.Id" class="btn btn-secondary"><i class="bi bi-info-circle-fill"></i> Detalle</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p>No hay registros</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Llamar a datatable
+            $('#tblClientes').DataTable({
+                language: {
+                    "decimal": "",
+                    "emmtyTable": "No hay informacion",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Ultimo",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+}

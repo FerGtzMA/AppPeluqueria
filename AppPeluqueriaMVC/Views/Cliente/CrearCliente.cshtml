@@ -1,0 +1,83 @@
+﻿@model AppPeluqueriaMVC.Models.Cliente
+@{
+    ViewData["Titel"] = "Crear Cliente";
+}
+
+
+<h1 class="text-center offset-1">Empleados</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Registro</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="CrearCliente" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="DNI" class="control-label"></label>
+                        <input asp-for="DNI" class="form-control" placeholder="Ingresa el DNI">
+                        <span asp-validation-for="DNI" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el Nombre">
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Apellido" class="control-label"></label>
+                        <input asp-for="Apellido" class="form-control" placeholder="Ingresa el Apellido">
+                        <span asp-validation-for="Apellido" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" placeholder="Ingresa el Telefono">
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calle" class="control-label"></label>
+                        <input asp-for="Calle" class="form-control" placeholder="Ingresa la Calle">
+                        <span asp-validation-for="Calle" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Número interior</label>
+                        <input asp-for="NumInt" class="form-control" placeholder="Ingresa el número interior">
+                        <span asp-validation-for="NumInt" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Colonia" class="control-label"></label>
+                        <input asp-for="Colonia" class="form-control" placeholder="Ingresa la Colonia">
+                        <span asp-validation-for="Colonia" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Código postal</label>
+                        <input asp-for="CodigoPostal" class="form-control" placeholder="Ingresa el código postal">
+                        <span asp-validation-for="CodigoPostal" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ciudad" class="control-label"></label>
+                        <input asp-for="Ciudad" class="form-control" placeholder="Ingresa la Ciudad">
+                        <span asp-validation-for="Ciudad" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Pais" class="control-label"></label>
+                        <input asp-for="Pais" class="form-control" placeholder="Ingresa el país">
+                        <span asp-validation-for="Pais" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Tratamientos" class="control-label"></label>
+                        <input asp-for="Tratamientos" class="form-control" placeholder="Ingresa los tratamientos">
+                        <span asp-validation-for="Tratamientos" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto"><i class="bi bi-person-check"></i>Registrar</button>
+                    </div>
+                </form>
+
+                <a asp-controller="Cliente" asp-action="VistaCliente">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

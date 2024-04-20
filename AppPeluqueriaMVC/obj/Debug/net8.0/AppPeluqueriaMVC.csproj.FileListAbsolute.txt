@@ -134,3 +134,4 @@ C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluque
 C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluqueriaMVC\obj\Debug\net8.0\AppPeluqueriaMVC.pdb
 C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluqueriaMVC\obj\Debug\net8.0\AppPeluqueriaMVC.genruntimeconfig.cache
 C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluqueriaMVC\obj\Debug\net8.0\ref\AppPeluqueriaMVC.dll
+C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluqueriaMVC\obj\Debug\net8.0\AppPeluqueriaMVC.sourcelink.json

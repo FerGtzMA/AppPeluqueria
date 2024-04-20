@@ -1,0 +1,26 @@
+﻿@model AppPeluqueriaMVC.Models.Empleado
+@{
+    ViewData["Title"] = "Detalle empleado";
+}
+
+<h1 class="text-center offset-1">Empleados</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Editar Empleados</strong></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>DNI: </strong>@Html.DisplayFor(m => m.DNI)</li>
+                    <li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Nombre)</li>
+                    <li class="list-group-item"><strong>Apellido: </strong>@Html.DisplayFor(m => m.Apellido)</li>
+                    <li class="list-group-item"><strong>Especialidad: </strong>@Html.DisplayFor(m => m.Especialidad)</li>
+                    <li class="list-group-item"><strong>Fecha de Ingreso: </strong>@Html.DisplayFor(m => m.Created)</li>
+                </ul>
+                <a asp-controller="Empleado" asp-action="VistaEmpleados">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

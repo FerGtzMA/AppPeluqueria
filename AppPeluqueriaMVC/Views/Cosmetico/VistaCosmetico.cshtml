@@ -1,0 +1,90 @@
+﻿@model IEnumerable<AppPeluqueriaMVC.Models.Cosmetico>
+@{
+    ViewData["Title"] = "Lista de cosmeticos";
+}
+
+<div class="row">
+    <h1 class="text-center">Cosmeticos</h1>
+    <div class="offset-9 col-3 mb-3">
+        <a asp-action="CrearCosmetico" asp-controller="Cosmetico" class="btn btn-secondary d-block mx-auto btn-lg">
+            <i class="bi bi-file-earmark-person-fill"></i>Añadir cosmetico
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Lista de comsticos</strong></h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    @if (Model.Count() > 0)
+                    {
+                        <table class="table table-bordered" id="tblCosmeticos" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(m => m.Codigo)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Nombre)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Cantidad)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Precio)</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(m => item.Codigo)</td>
+                                        <td>@Html.DisplayFor(m => item.Nombre)</td>
+                                        <td>@Html.DisplayFor(m => item.Cantidad)</td>
+                                        <td>@Html.DisplayFor(m => item.Precio)</td>
+                                        <td>
+                                            <a asp-action="EditarCosmetico" asp-route-codigo="@item.Codigo" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>
+                                            <a asp-action="DetalleCosmetico" asp-route-codigo="@item.Codigo" class="btn btn-secondary"><i class="bi bi-info-circle-fill"></i> Detalle</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p>No hay registros</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Llamar a datatable
+            $('#tblCosmeticos').DataTable({
+                language: {
+                    "decimal": "",
+                    "emmtyTable": "No hay informacion",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Ultimo",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });
+    </script>
+}

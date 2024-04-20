@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\controllers\\cosmeticocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\controllers\\cosmeticocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cosmetico\\detallecosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cosmetico\\detallecosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cosmetico\\vistacosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cosmetico\\vistacosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cosmetico\\editarcosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cosmetico\\editarcosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cosmetico\\crearcosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cosmetico\\crearcosmetico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DetalleCosmetico.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\DetalleCosmetico.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cosmetico\\DetalleCosmetico.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\DetalleCosmetico.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cosmetico\\DetalleCosmetico.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T23:31:38.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditarCosmetico.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\EditarCosmetico.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cosmetico\\EditarCosmetico.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\EditarCosmetico.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cosmetico\\EditarCosmetico.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwA8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T23:28:42.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T23:16:25.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CrearCosmetico.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\CrearCosmetico.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cosmetico\\CrearCosmetico.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\CrearCosmetico.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cosmetico\\CrearCosmetico.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T23:09:13.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VistaCosmetico.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\VistaCosmetico.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cosmetico\\VistaCosmetico.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cosmetico\\VistaCosmetico.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cosmetico\\VistaCosmetico.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T23:03:58.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CosmeticoController.cs",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Controllers\\CosmeticoController.cs",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Controllers\\CosmeticoController.cs",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Controllers\\CosmeticoController.cs",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Controllers\\CosmeticoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T21:40:13.027Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

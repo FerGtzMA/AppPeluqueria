@@ -34,6 +34,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxWaXN0YUNsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cosmetico/CrearCosmetico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29zbWV0aWNvXENyZWFyQ29zbWV0aWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cosmetico/DetalleCosmetico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29zbWV0aWNvXERldGFsbGVDb3NtZXRpY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cosmetico/EditarCosmetico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29zbWV0aWNvXEVkaXRhckNvc21ldGljby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cosmetico/VistaCosmetico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29zbWV0aWNvXFZpc3RhQ29zbWV0aWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Empleado/BorrarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQm9ycmFyRW1wbGVhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

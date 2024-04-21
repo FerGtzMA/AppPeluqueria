@@ -28,6 +28,8 @@ namespace AppPeluqueriaMVC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
 
@@ -45,6 +47,10 @@ namespace AppPeluqueriaMVC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Id_Cliente");
+
+                    b.HasIndex("Id_Empleado");
 
                     b.ToTable("Cita");
                 });
@@ -198,13 +204,13 @@ namespace AppPeluqueriaMVC.Migrations
                 {
                     b.HasOne("AppPeluqueriaMVC.Models.Cliente", "Cliente")
                         .WithMany("Citas")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("Id_Cliente")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("AppPeluqueriaMVC.Models.Empleado", "Empleado")
                         .WithMany("Citas")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("Id_Empleado")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

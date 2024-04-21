@@ -9,10 +9,12 @@ namespace AppPeluqueriaMVC.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime Fecha { get; set; }
-        public int Id_Empleado { get; set; }
-        public int Id_Cliente { get; set; }
         public string TipoServicio { get; set; }
         public DateTime Created {  get; set; }
+        [ForeignKey("Empleado")]
+        public int Id_Empleado { get; set; }
+        [ForeignKey("Cliente")]
+        public int Id_Cliente { get; set; }
 
         public Empleado Empleado { get; set; }
         public Cliente Cliente { get; set; }

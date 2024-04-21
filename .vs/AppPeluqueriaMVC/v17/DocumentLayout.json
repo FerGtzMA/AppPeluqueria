@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\vistacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\vistacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\viewmodels\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\viewmodels\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\models\\citacosmetico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\models\\citacosmetico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\vistacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\vistacita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\editarcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\editarcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\views\\cita\\detallecita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\views\\cita\\detallecita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|c:\\users\\yahir\\onedrive\\escritorio\\netcorerestfulapi\\apppeluqueriamvc\\apppeluqueriamvc\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C0515-5F02-4C82-8E1A-39D1CE318279}|AppPeluqueriaMVC\\AppPeluqueriaMVC.csproj|solutionrelative:apppeluqueriamvc\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,27 +47,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAMcAAAAAAAAAAAAQwNkAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:44:19.567Z",
+              "Title": "VistaCita.cshtml",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T04:35:53.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cliente.cs",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\Cliente.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:02:55.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cita.cs",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\Cita.cs",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cita.cs",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\Cita.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wBQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:45:23.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Empleado.cs",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\Empleado.cs",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Empleado.cs",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\Empleado.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBQAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:45:09.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AppPeluqueriaMVC\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:24:46.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CitaController.cs",
               "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Controllers\\CitaController.cs",
               "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Controllers\\CitaController.cs",
               "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Controllers\\CitaController.cs",
               "RelativeToolTip": "AppPeluqueriaMVC\\Controllers\\CitaController.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAUwHkAAAAIAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T23:50:26.185Z",
+              "WhenOpened": "2024-04-21T03:19:10.602Z",
               "EditorCaption": ""
             },
             {
@@ -86,100 +130,22 @@
               "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cita\\CrearCita.cshtml",
               "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\CrearCita.cshtml",
               "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cita\\CrearCita.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACsAAABTAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-21T00:06:06.547Z",
+              "WhenOpened": "2024-04-21T03:18:19.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CitaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\ViewModels\\CitaViewModel.cs",
               "RelativeDocumentMoniker": "AppPeluqueriaMVC\\ViewModels\\CitaViewModel.cs",
               "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\ViewModels\\CitaViewModel.cs",
               "RelativeToolTip": "AppPeluqueriaMVC\\ViewModels\\CitaViewModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAgAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:23:50.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Empleado.cs",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\Empleado.cs",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Empleado.cs",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\Empleado.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T01:41:28.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CitaCosmetico.cs",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\CitaCosmetico.cs",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\CitaCosmetico.cs",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\CitaCosmetico.cs",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\CitaCosmetico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T00:18:11.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cita.cs",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cita.cs",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Models\\Cita.cs",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Models\\Cita.cs",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Models\\Cita.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAIwAUAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T00:17:53.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DetalleCita.cshtml",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\DetalleCita.cshtml",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cita\\DetalleCita.cshtml",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\DetalleCita.cshtml",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cita\\DetalleCita.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAqwCoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-21T00:10:53.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EditarCita.cshtml",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\EditarCita.cshtml",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cita\\EditarCita.cshtml",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\EditarCita.cshtml",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cita\\EditarCita.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-21T00:09:28.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VistaCita.cshtml",
-              "DocumentMoniker": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
-              "RelativeDocumentMoniker": "AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
-              "ToolTip": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
-              "RelativeToolTip": "AppPeluqueriaMVC\\Views\\Cita\\VistaCita.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAqwC4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T23:52:53.943Z",
+              "WhenOpened": "2024-04-21T03:17:07.938Z",
               "EditorCaption": ""
             }
           ]

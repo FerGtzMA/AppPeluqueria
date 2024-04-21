@@ -37,8 +37,8 @@
                                 {
                                     <tr>
                                         <td>@Html.DisplayFor(m => item.Fecha)</td>
-                                        <td>@Html.DisplayFor(m => item.Id_Empleado)</td>
-                                        <td>@Html.DisplayFor(m => item.Id_Cliente)</td>
+                                        <td>@Html.DisplayFor(m => item.Empleado.Nombre) @Html.DisplayFor(m => item.Empleado.Apellido)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Cliente.Nombre) @Html.DisplayFor(modelItem => item.Cliente.Apellido)</td>
                                         <td>@Html.DisplayFor(m => item.TipoServicio)</td>
                                         <td>
                                             <a asp-action="EditarCita" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>

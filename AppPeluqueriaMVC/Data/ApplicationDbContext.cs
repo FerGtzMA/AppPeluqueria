@@ -27,9 +27,10 @@ namespace AppPeluqueriaMVC.Data
 
             // Configuracion de Empleado con citas
             modelBuilder.Entity<Empleado>()
-                        .HasMany(e => e.Citas)
-                        .WithOne(c => c.Empleado)
-                        .HasForeignKey(c => c.Id);
+                        .HasMany(c => c.Citas)
+                        .WithOne(e => e.Empleado)
+                        .HasForeignKey(e => e.Id_Empleado)
+                        .OnDelete(DeleteBehavior.Cascade);
 
             // Configuracion de Empleado
             modelBuilder.Entity<Empleado>(entity =>
@@ -45,9 +46,10 @@ namespace AppPeluqueriaMVC.Data
 
             // Configuracion de Cliente con citas
             modelBuilder.Entity<Cliente>()
-                        .HasMany(e => e.Citas)
-                        .WithOne(c => c.Cliente)
-                        .HasForeignKey(c => c.Id);
+                        .HasMany(c => c.Citas) 
+                        .WithOne(e => e.Cliente) 
+                        .HasForeignKey(e => e.Id_Cliente) 
+                        .OnDelete(DeleteBehavior.Cascade);
 
             // Configuracion de Cliente
             modelBuilder.Entity<Cliente>(entity =>

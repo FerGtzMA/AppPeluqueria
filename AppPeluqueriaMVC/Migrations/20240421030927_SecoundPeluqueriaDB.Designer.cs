@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppPeluqueriaMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240419234922_InicialPeluqueria")]
-    partial class InicialPeluqueria
+    [Migration("20240421030927_SecoundPeluqueriaDB")]
+    partial class SecoundPeluqueriaDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,8 @@ namespace AppPeluqueriaMVC.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
@@ -48,6 +50,10 @@ namespace AppPeluqueriaMVC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Id_Cliente");
+
+                    b.HasIndex("Id_Empleado");
 
                     b.ToTable("Cita");
                 });
@@ -201,13 +207,13 @@ namespace AppPeluqueriaMVC.Migrations
                 {
                     b.HasOne("AppPeluqueriaMVC.Models.Cliente", "Cliente")
                         .WithMany("Citas")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("Id_Cliente")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("AppPeluqueriaMVC.Models.Empleado", "Empleado")
                         .WithMany("Citas")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("Id_Empleado")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

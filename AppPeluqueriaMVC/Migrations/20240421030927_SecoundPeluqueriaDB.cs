@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AppPeluqueriaMVC.Migrations
 {
     /// <inheritdoc />
-    public partial class InicialPeluqueria : Migration
+    public partial class SecoundPeluqueriaDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,12 +74,12 @@ namespace AppPeluqueriaMVC.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),  // Autoincremental
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Id_Empleado = table.Column<int>(type: "int", nullable: false),
-                    Id_Cliente = table.Column<int>(type: "int", nullable: false),
                     TipoServicio = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Id_Empleado = table.Column<int>(type: "int", nullable: false),
+                    Id_Cliente = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -97,7 +97,6 @@ namespace AppPeluqueriaMVC.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
 
             migrationBuilder.CreateTable(
                 name: "CitaCosmetico",
@@ -122,6 +121,16 @@ namespace AppPeluqueriaMVC.Migrations
                         principalColumn: "Codigo",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cita_Id_Cliente",
+                table: "Cita",
+                column: "Id_Cliente");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cita_Id_Empleado",
+                table: "Cita",
+                column: "Id_Empleado");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CitaCosmetico_CosmeticoId",

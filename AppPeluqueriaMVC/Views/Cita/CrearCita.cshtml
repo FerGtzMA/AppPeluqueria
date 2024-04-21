@@ -1,0 +1,57 @@
+﻿@model AppPeluqueriaMVC.ViewModels.CitaViewModel
+@{
+    ViewData["Title"] = "Crear nueva cita";
+}
+
+<h1 class="text-center offset-1">Citas</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Agendar nueva cita</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="CrearCita" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Cita.Fecha" class="control-label"></label>
+                        <input asp-for="Cita.Fecha" class="form-control" placeholder="Ingresa la Fecha">
+                        <span asp-validation-for="Cita.Fecha" class="text-danger"></span>
+                    </div>
+                    @* <div class="form-group">
+                        <label asp-for="Cita.Id_Empleado" class="control-label"></label>
+                        <input asp-for="Cita.Id_Empleado" class="form-control" placeholder="Ingresa el Id_Empleado" type="number">
+                        <span asp-validation-for="Cita.Id_Empleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Cita.Id_Cliente" class="control-label"></label>
+                        <input asp-for="Cita.Id_Cliente" class="form-control" placeholder="Ingresa el Id_Cliente" type="number">
+                        <span asp-validation-for="Cita.Id_Cliente" class="text-danger"></span>
+                    </div> *@
+                    <div class="form-group">
+                        <label asp-for="Cita.TipoServicio" class="control-label"></label>
+                        <input asp-for="Cita.TipoServicio" class="form-control" placeholder="Ingresa el tipo de servicio">
+                        <span asp-validation-for="Cita.TipoServicio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Cita.Id_Empleado" class="control-label"></label>
+                        <select asp-for="Cita.Id_Empleado" asp-items="Model.Empleados" class="form-control"></select>
+                        <span asp-validation-for="Cita.Id_Empleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Cita.Id_Cliente" class="control-label"></label>
+                        <select asp-for="Cita.Id_Cliente" asp-items="Model.Clientes" class="form-control"></select>
+                        <span asp-validation-for="Cita.Id_Cliente" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto"><i class="bi bi-person-check"></i>Crear cita</button>
+                    </div>
+                </form>
+
+                <a asp-controller="Cita" asp-action="VistaCita">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

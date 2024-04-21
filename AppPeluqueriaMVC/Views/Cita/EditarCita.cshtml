@@ -1,0 +1,49 @@
+﻿@model AppPeluqueriaMVC.Models.Cita
+@{
+    ViewData["Title"] = "Crear nueva cita";
+}
+
+<h1 class="text-center offset-1">Citas</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Agendar nueva cita</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="EditarCita" method="post">
+                    <input asp-for="Id" type="hidden">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Fecha" class="control-label"></label>
+                        <input asp-for="Fecha" class="form-control" placeholder="Ingresa la Fecha">
+                        <span asp-validation-for="Fecha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Empleado" class="control-label"></label>
+                        <input asp-for="Id_Empleado" class="form-control" placeholder="Ingresa el Id_Empleado" type="number">
+                        <span asp-validation-for="Id_Empleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Cliente" class="control-label"></label>
+                        <input asp-for="Id_Cliente" class="form-control" placeholder="Ingresa el Id_Cliente" type="number">
+                        <span asp-validation-for="Id_Cliente" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TipoServicio" class="control-label"></label>
+                        <input asp-for="TipoServicio" class="form-control" placeholder="Ingresa el tipo de servicio">
+                        <span asp-validation-for="TipoServicio" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto"><i class="bi bi-person-check"></i>Modificar cita</button>
+                    </div>
+                </form>
+
+                <a asp-controller="Cita" asp-action="VistaCita">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

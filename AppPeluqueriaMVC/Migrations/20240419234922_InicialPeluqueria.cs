@@ -73,7 +73,8 @@ namespace AppPeluqueriaMVC.Migrations
                 name: "Cita",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),  // Autoincremental
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Id_Empleado = table.Column<int>(type: "int", nullable: false),
                     Id_Cliente = table.Column<int>(type: "int", nullable: false),
@@ -84,18 +85,19 @@ namespace AppPeluqueriaMVC.Migrations
                 {
                     table.PrimaryKey("PK_Cita", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cita_Cliente_Id",
-                        column: x => x.Id,
+                        name: "FK_Cita_Cliente_Id_Cliente",
+                        column: x => x.Id_Cliente,
                         principalTable: "Cliente",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Cita_Empleado_Id",
-                        column: x => x.Id,
+                        name: "FK_Cita_Empleado_Id_Empleado",
+                        column: x => x.Id_Empleado,
                         principalTable: "Empleado",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
 
             migrationBuilder.CreateTable(
                 name: "CitaCosmetico",

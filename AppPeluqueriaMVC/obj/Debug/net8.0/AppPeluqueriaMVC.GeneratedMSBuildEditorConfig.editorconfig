@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\yahir\OneDrive\Escritorio\NetCoreRestfulApi\AppPeluqueriaMVC\AppPeluqueriaMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cita/CrearCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxDcmVhckNpdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cita/DetalleCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxEZXRhbGxlQ2l0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cita/EditarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxFZGl0YXJDaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cita/VistaCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxWaXN0YUNpdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yahir/OneDrive/Escritorio/NetCoreRestfulApi/AppPeluqueriaMVC/AppPeluqueriaMVC/Views/Cliente/CrearCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhckNsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -19,5 +19,7 @@ namespace AppPeluqueriaMVC.Models
         public Empleado Empleado { get; set; }
         public Cliente Cliente { get; set; }
         public List<Cosmetico> Cosmeticos { get; set; } = new List<Cosmetico>();
+
+        public double CostoTotal { get; set; }
     }
 }

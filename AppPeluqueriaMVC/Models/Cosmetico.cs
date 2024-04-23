@@ -17,5 +17,9 @@ namespace AppPeluqueriaMVC.Models
         public DateTime Created { get; set; }
 
         public List<Cita> Citas { get; set; } = new List<Cita>();
+
+        public byte[]? imagenProducto { get; set; }
+        // Nuevo campo para almacenar la URL de la imagen
+        public string? ImagenUrl { get; set; }
     }
 }

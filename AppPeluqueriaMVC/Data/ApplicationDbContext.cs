@@ -68,6 +68,12 @@ namespace AppPeluqueriaMVC.Data
                 entity.Property(e => e.Pais).HasColumnType("varchar(40)");
                 entity.Property(e => e.Tratamientos).HasColumnType("varchar(100)");
             });
+
+            // Configurando el tipo de dato de imagen en SQL Server
+            modelBuilder.Entity<Cosmetico>(entity =>
+            {
+                entity.Property(e => e.imagenProducto).HasColumnType("VARBINARY(MAX)");
+            });
         }
 
         // Modelos

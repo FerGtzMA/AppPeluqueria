@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AppPeluqueriaMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\wwwroot\\Images\\Internal\\ProductEmpty.jpg",
+      "PackagePath": "staticwebassets\\Images\\Internal\\ProductEmpty.jpg"
+    },
+    {
       "Id": "C:\\Users\\yahir\\OneDrive\\Escritorio\\NetCoreRestfulApi\\AppPeluqueriaMVC\\AppPeluqueriaMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

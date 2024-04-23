@@ -12,7 +12,7 @@
                 <h3 class="text-white"><strong>Agendar nueva cita</strong></h3>
             </div>
             <div class="card-body">
-                <form asp-action="CrearCita" method="post">
+                <form asp-action="CrearCita" method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <!-- Campo para Fecha de la Cita -->
                     <div class="form-group">
@@ -27,13 +27,6 @@
                         <input asp-for="TipoServicio" class="form-control" />
                         <span asp-validation-for="TipoServicio" class="text-danger"></span>
                     </div>
-
-                    <!-- Dropdown para seleccionar Empleado -->
-                    @* <div class="form-group">
-                        <label asp-for="Id_Cliente" class="control-label">Id cliente</label>
-                        <input asp-for="Id_Cliente" class="form-control" />
-                        <span asp-validation-for="Id_Cliente" class="text-danger"></span>
-                    </div> *@
                     <div class="form-group">
                         <label asp-for="Id_Cliente" class="control-label">Cliente</label>
                         <select asp-for="Id_Cliente" asp-items="@(new SelectList(ViewBag.Clientes, "Value", "Text"))" class="form-control">
@@ -41,12 +34,6 @@
                         </select>
                         <span asp-validation-for="Id_Cliente" class="text-danger"></span>
                     </div>
-
-                    @* <div class="form-group">
-                        <label asp-for="Id_Empleado" class="control-label">Id empleado</label>
-                        <input asp-for="Id_Empleado" class="form-control" />
-                        <span asp-validation-for="Id_Empleado" class="text-danger"></span>
-                    </div> *@
                     <div class="form-group">
                         <label asp-for="Id_Empleado" class="control-label">Empleado</label>
                         <select asp-for="Id_Empleado" asp-items="@(new SelectList(ViewBag.Empleados, "Value", "Text"))" class="form-control">

@@ -3,6 +3,13 @@
     ViewData["Title"] = "Lista de cosmeticos";
 }
 
+<style>
+    table td, table th, table tr {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
 <div class="row">
     <h1 class="text-center">Cosmeticos</h1>
     <div class="offset-9 col-3 mb-3">
@@ -29,6 +36,7 @@
                                     <th>@Html.DisplayNameFor(m => m.Nombre)</th>
                                     <th>@Html.DisplayNameFor(m => m.Cantidad)</th>
                                     <th>@Html.DisplayNameFor(m => m.Precio)</th>
+                                    <th>Producto</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -40,6 +48,9 @@
                                         <td>@Html.DisplayFor(m => item.Nombre)</td>
                                         <td>@Html.DisplayFor(m => item.Cantidad)</td>
                                         <td>@Html.DisplayFor(m => item.Precio)</td>
+                                        <td class="text-center">
+                                            <img src="@Url.Action("GetImage", new { codigo = item.Codigo })" alt="Imagen del Artículo" style="width:100px; height:auto;">
+                                        </td>
                                         <td>
                                             <a asp-action="EditarCosmetico" asp-route-codigo="@item.Codigo" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>
                                             <a asp-action="DetalleCosmetico" asp-route-codigo="@item.Codigo" class="btn btn-secondary"><i class="bi bi-info-circle-fill"></i> Detalle</a>

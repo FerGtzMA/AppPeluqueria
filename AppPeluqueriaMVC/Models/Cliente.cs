@@ -24,5 +24,12 @@ namespace AppPeluqueriaMVC.Models
         public DateTime Created { get; set; }
 
         public List<Cita> Citas { get; set; } = new List<Cita>();
+
+        //public string Email { get; set; }
+
+        public string NombreCompleto()
+        {
+            return Nombre + " " + Apellido;
+        }
     }
 }

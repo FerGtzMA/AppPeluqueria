@@ -4,6 +4,7 @@ using AppPeluqueriaMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppPeluqueriaMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240423214809_AddTableServicios")]
+    partial class AddTableServicios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,10 +47,6 @@ namespace AppPeluqueriaMVC.Migrations
 
                     b.Property<int>("Id_Empleado")
                         .HasColumnType("int");
-
-                    b.Property<string>("SelectedCosmeticoIds")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoServicio")
                         .IsRequired()
@@ -228,7 +227,7 @@ namespace AppPeluqueriaMVC.Migrations
                     b.ToTable("Empleado");
                 });
 
-            modelBuilder.Entity("AppPeluqueriaMVC.Models.Servicio", b =>
+            modelBuilder.Entity("AppPeluqueriaMVC.Models.Cosmetico", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -251,7 +250,7 @@ namespace AppPeluqueriaMVC.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Servicio");
+                    b.ToTable("Cosmetico");
                 });
 
             modelBuilder.Entity("AppPeluqueriaMVC.Models.Cita", b =>
@@ -300,7 +299,7 @@ namespace AppPeluqueriaMVC.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AppPeluqueriaMVC.Models.Servicio", "Servicio")
+                    b.HasOne("AppPeluqueriaMVC.Models.Cosmetico", "Cosmetico")
                         .WithMany()
                         .HasForeignKey("ServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -308,7 +307,7 @@ namespace AppPeluqueriaMVC.Migrations
 
                     b.Navigation("Cita");
 
-                    b.Navigation("Servicio");
+                    b.Navigation("Cosmetico");
                 });
 
             modelBuilder.Entity("AppPeluqueriaMVC.Models.Cliente", b =>

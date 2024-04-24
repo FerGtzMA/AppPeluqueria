@@ -69,11 +69,24 @@ namespace AppPeluqueriaMVC.Data
                 entity.Property(e => e.Tratamientos).HasColumnType("varchar(100)");
             });
 
-            // Configurando el tipo de dato de imagen en SQL Server
+            // Configurando el tipo de dato de imagen del cosmetico en SQL Server
             modelBuilder.Entity<Cosmetico>(entity =>
             {
                 entity.Property(e => e.imagenProducto).HasColumnType("VARBINARY(MAX)");
             });
+
+            // Configuracion de las relaciones de Citas y Servicios
+            modelBuilder.Entity<Cita>()
+                        .HasMany(c => c.Servicios)
+                        .WithMany(c => c.Citas)
+                        .UsingEntity<CitaServicio>(
+                            j => j
+                                .HasOne(cc => cc.Servicio)
+                                .WithMany(),
+                            j => j
+                                .HasOne(cc => cc.Cita)
+                                .WithMany())
+                        .HasKey(cc => new { cc.CitaId, cc.ServicioId });
         }
 
         // Modelos
@@ -82,5 +95,9 @@ namespace AppPeluqueriaMVC.Data
         public DbSet<Cosmetico> Cosmetico { get; set; }
         public DbSet<Cita> Cita { get; set; }
         public DbSet<CitaCosmetico> CitaCosmetico { get; set; }
+
+        public DbSet<Servicio> Servicio { get; set; }
+        public DbSet<CitaServicio> CitaServicio { get; set; }
+
     }
 }

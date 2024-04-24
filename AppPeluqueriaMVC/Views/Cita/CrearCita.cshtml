@@ -1,6 +1,6 @@
 ﻿@model AppPeluqueriaMVC.Models.Cita
 @{
-    ViewData["Title"] = "Crear nueva cita";
+    //ViewData["Title"] = "Crear nueva cita";
 }
 
 <h1 class="text-center offset-1">Citas</h1>
@@ -20,11 +20,11 @@
                         <input asp-for="Fecha" class="form-control" type="datetime-local" />
                         <span asp-validation-for="Fecha" class="text-danger"></span>
                     </div>
-
-                    <!-- Campo para Tipo de Servicio -->
                     <div class="form-group">
                         <label asp-for="TipoServicio" class="control-label">Tipo de Servicio</label>
-                        <input asp-for="TipoServicio" class="form-control" />
+                        <select asp-for="TipoServicio" asp-items="@(new SelectList(ViewBag.Servicios, "Value", "Text"))" class="form-control">
+                            <option value="">Seleccione un cliente</option>
+                        </select>
                         <span asp-validation-for="TipoServicio" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -40,6 +40,12 @@
                             <option value="">Seleccione un empleado</option>
                         </select>
                         <span asp-validation-for="Id_Empleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Cosmeticos" class="control-label">Cosmeticos</label>
+                        <select asp-for="Cosmeticos" asp-items="@ViewBag.Cosmeticos" class="form-control" multiple multiple name="cosmeticoIds">
+                        </select>
+                        <span asp-validation-for="Cosmeticos" class="text-danger"></span>
                     </div>
 
                     <div class="form-group mt-3">

@@ -62,7 +62,7 @@ namespace AppPeluqueriaMVC.Controllers
                         var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Images/Internal", "ProductEmpty.jpg");
                         cosmetico.imagenProducto = System.IO.File.ReadAllBytes(path);
                     }
-
+                    cosmetico.Created = DateTime.Now;
                     _context.Cosmetico.Add(cosmetico);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(VistaCosmetico));

@@ -12,33 +12,40 @@
                 <h3 class="text-white"><strong>Agendar nueva cita</strong></h3>
             </div>
             <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Id: </strong>@Html.DisplayFor(m => m.Id)</li>
+                    <li class="list-group-item"><strong>Fecha de la cita: </strong>@Html.DisplayFor(m => m.Fecha)</li>
+                    <li class="list-group-item"><strong>Empleado: </strong>@(Model.Empleado != null ? Model.Empleado.NombreCompleto() : "No asignado")</li>
+                    <li class="list-group-item"><strong>Cliente: </strong>@(Model.Cliente != null ? Model.Cliente.NombreCompleto() : "No asignado")</li>
+                    <li class="list-group-item"><strong>Tipo de servicio: </strong>@Html.DisplayFor(m => m.TipoServicio)</li>
+                    <li class="list-group-item">
+                        <strong>Cosméticos:</strong>
+                        @if (Model.Cosmeticos != null && Model.Cosmeticos.Any())
+                        {
+                            <ul>
+                                @foreach (var cosmetico in Model.Cosmeticos)
+                                {
+                                    <li>
+                                        @cosmetico.Nombre
+                                        <img src="@Url.Action("GetImage", new { codigo = cosmetico.Codigo })" alt="Imagen de @cosmetico.Nombre" style="width:180px; height:auto;">
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p>No hay cosméticos asignados.</p>
+                        }
+                    </li>
+                    <li class="list-group-item"><strong>Creado: </strong>@Html.DisplayFor(m => m.Created)</li>
+                </ul>
+            </div>
+            <div>
                 <form asp-action="BorrarCita" method="post">
                     <input asp-for="Id" type="hidden">
 
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Fecha" class="control-label"></label>
-                        <input asp-for="Fecha" class="form-control" readonly>
-                        <span asp-validation-for="Fecha" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Id_Empleado" class="control-label"></label>
-                        <input asp-for="Id_Empleado" class="form-control" readonly type="number">
-                        <span asp-validation-for="Id_Empleado" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Id_Cliente" class="control-label"></label>
-                        <input asp-for="Id_Cliente" class="form-control" readonly type="number">
-                        <span asp-validation-for="Id_Cliente" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="TipoServicio" class="control-label"></label>
-                        <input asp-for="TipoServicio" class="form-control" readonly>
-                        <span asp-validation-for="TipoServicio" class="text-danger"></span>
-                    </div>
-
                     <div class="form-group mt-3">
-                        <button type="submit" class="btn btn-danger d-block mx-auto"><i class="bi bi-person-check"></i>Cancelar cita</button>
+                        <button type="submit" class="btn btn-danger d-block mx-auto"><i class="bi bi-trash"></i>Eliminar producto</button>
                     </div>
                 </form>
 

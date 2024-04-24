@@ -1,13 +1,14 @@
-﻿@model IEnumerable<AppPeluqueriaMVC.Models.Cita>
+﻿@model IEnumerable<AppPeluqueriaMVC.Models.Servicio>
 @{
-    ViewData["Title"] = "Lista de citas";
+    ViewData["Title"] = "Servicios disponibles";
 }
 
+
 <div class="row">
-    <h1 class="text-center">Citas</h1>
+    <h1 class="text-center">Servicios</h1>
     <div class="offset-9 col-3 mb-3">
-        <a asp-action="CrearCita" asp-controller="Cita" class="btn btn-primary d-block mx-auto btn-lg">
-            <i class="bi bi-calendar-plus"></i>Agendar cita
+        <a asp-action="CrearServicio" asp-controller="Servicio" class="btn btn-secondary d-block mx-auto btn-lg">
+            <i class="bi bi-plus-square-fill"></i>Nuevo Servicio
         </a>
     </div>
 </div>
@@ -16,20 +17,19 @@
     <div class="offset-12">
         <div class="card border">
             <div class="card-header bg-dark">
-                <h3 class="text-white"><strong>Citas pendientes</strong></h3>
+                <h3 class="text-white"><strong>Lista de Servicios</strong></h3>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     @if (Model.Count() > 0)
                     {
-                        <table class="table table-bordered" id="tblCita" width="100%" cellspacing="0">
+                        <table class="table table-bordered" id="tblServicios" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>@Html.DisplayNameFor(m => m.Fecha)</th>
-                                    <th>@Html.DisplayNameFor(m => m.Id_Empleado)</th>
-                                    <th>@Html.DisplayNameFor(m => m.Id_Cliente)</th>
-                                    <th>@Html.DisplayNameFor(m => m.TipoServicio)</th>
-                                    <th>Cosméticos</th>
+                                    <th>@Html.DisplayNameFor(m => m.Id)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Nombre)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Descripcion)</th>
+                                    <th>@Html.DisplayNameFor(m => m.Precio)</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -37,20 +37,13 @@
                                 @foreach (var item in Model)
                                 {
                                     <tr>
-                                        <td>@Html.DisplayFor(m => item.Fecha)</td>
-                                        <td>@Html.DisplayFor(m => item.Empleado.Nombre) @Html.DisplayFor(m => item.Empleado.Apellido)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.Cliente.Nombre) @Html.DisplayFor(modelItem => item.Cliente.Apellido)</td>
-                                        <td>@Html.DisplayFor(m => item.TipoServicio)</td>
+                                        <td>@Html.DisplayFor(m => item.Id)</td>
+                                        <td>@Html.DisplayFor(m => item.Nombre)</td>
+                                        <td>@Html.DisplayFor(m => item.Descripcion)</td>
+                                        <td>@Html.DisplayFor(m => item.Precio)</td>
                                         <td>
-                                            @foreach (var cosmetico in item.Cosmeticos)
-                                            {
-                                                <p>@cosmetico.Nombre</p>
-                                                <img src="@Url.Action("GetImage", new { codigo = cosmetico.Codigo })" alt="Imagen del Artículo" style="width:50px; height:auto;">
-                                            }
-                                        </td>
-                                        <td>
-                                            <a asp-action="EditarCita" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>
-                                            <a asp-action="DetalleCita" asp-route-id="@item.Id" class="btn btn-secondary"><i class="bi bi-info-circle-fill"></i> Detalle</a>
+                                            <a asp-action="EditarServicio" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil"></i> Editar</a>
+                                            <a asp-action="DetalleServicio" asp-route-id="@item.Id" class="btn btn-secondary"><i class="bi bi-info-circle-fill"></i> Detalle</a>
                                         </td>
                                     </tr>
                                 }
@@ -71,7 +64,7 @@
     <script>
         $(document).ready(function () {
             // Llamar a datatable
-            $('#tblCita').DataTable({
+            $('#tblServicios').DataTable({
                 language: {
                     "decimal": "",
                     "emmtyTable": "No hay informacion",

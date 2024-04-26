@@ -23,7 +23,7 @@
                     <div class="form-group">
                         <label asp-for="TipoServicio" class="control-label">Tipo de Servicio</label>
                         <select asp-for="TipoServicio" asp-items="@(new SelectList(ViewBag.Servicios, "Value", "Text"))" class="form-control">
-                            <option value="">Seleccione un cliente</option>
+                            <option value="">Seleccione un servicio</option>
                         </select>
                         <span asp-validation-for="TipoServicio" class="text-danger"></span>
                     </div>

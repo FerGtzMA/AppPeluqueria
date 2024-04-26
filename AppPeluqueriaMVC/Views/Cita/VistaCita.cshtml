@@ -26,9 +26,10 @@
                             <thead>
                                 <tr>
                                     <th>@Html.DisplayNameFor(m => m.Fecha)</th>
-                                    <th>@Html.DisplayNameFor(m => m.Id_Empleado)</th>
-                                    <th>@Html.DisplayNameFor(m => m.Id_Cliente)</th>
-                                    <th>@Html.DisplayNameFor(m => m.TipoServicio)</th>
+                                    <th>Empleado</th>
+                                    <th>Cliente</th>
+                                    <th>Servicio</th>
+                                    <th>Costo total</th>
                                     <th>Cosméticos</th>
                                     <th>Acciones</th>
                                 </tr>
@@ -39,8 +40,9 @@
                                     <tr>
                                         <td>@Html.DisplayFor(m => item.Fecha)</td>
                                         <td>@Html.DisplayFor(m => item.Empleado.Nombre) @Html.DisplayFor(m => item.Empleado.Apellido)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.Cliente.Nombre) @Html.DisplayFor(modelItem => item.Cliente.Apellido)</td>
+                                        <td>@Html.DisplayFor(m => item.Cliente.Nombre) @Html.DisplayFor(m => item.Cliente.Apellido)</td>
                                         <td>@Html.DisplayFor(m => item.TipoServicio)</td>
+                                        <td>@Html.DisplayFor(m => item.CostoTotal)</td>
                                         <td>
                                             @foreach (var cosmetico in item.Cosmeticos)
                                             {

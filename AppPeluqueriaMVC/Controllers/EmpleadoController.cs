@@ -88,26 +88,9 @@ namespace AppPeluqueriaMVC.Controllers
             return View(empleado);
         }
 
-        [HttpGet]
-        public IActionResult BorrarEmpleado(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var empleado = _context.Empleado.Find(id);
-            if (empleado == null)
-            {
-                return NotFound();
-            }
-
-            return View(empleado);
-        }
-
         [HttpPost, ActionName("BorrarEmpleado")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BorrarEmpleadoAccion(int? id)
+        public async Task<IActionResult> BorrarEmpleado(int? id)
         {
             var empleado = await _context.Empleado.FindAsync(id);
             if (empleado == null)

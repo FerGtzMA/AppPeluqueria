@@ -19,6 +19,16 @@
                     <li class="list-group-item"><strong>Especialidad: </strong>@Html.DisplayFor(m => m.Especialidad)</li>
                     <li class="list-group-item"><strong>Fecha de Ingreso: </strong>@Html.DisplayFor(m => m.Created)</li>
                 </ul>
+            </div>
+            <div class="card-body">
+                <form asp-action="BorrarEmpleado" method="post">
+                    <input asp-for="Id" type="hidden">
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-danger d-block mx-auto"><i class="bi bi-person-dash"></i>Borrar</button>
+                    </div>
+                </form>
+
                 <a asp-controller="Empleado" asp-action="VistaEmpleados">Volver</a>
             </div>
         </div>

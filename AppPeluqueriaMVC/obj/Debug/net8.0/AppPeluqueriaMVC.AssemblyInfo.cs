@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppPeluqueriaMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d3215efa0a0e75701ad121660bd70f0a66faabd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1731f24b23d47377f6170293dccba970bb28079")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppPeluqueriaMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppPeluqueriaMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

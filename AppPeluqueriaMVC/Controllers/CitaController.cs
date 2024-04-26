@@ -23,6 +23,7 @@ namespace AppPeluqueriaMVC.Controllers
                 .Include(c => c.Empleado)
                 .Include(c => c.Cliente)
                 .Include(c => c.Cosmeticos)
+                .Include(c => c.Servicios)
                 .ToList();
 
             return View(citas);
@@ -73,20 +74,43 @@ namespace AppPeluqueriaMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CrearCita(Cita cita, [FromForm] List<int> cosmeticoIds)
         {
+            double totalCita = 0;
+
             cita.Created = DateTime.Now;
             _context.Cita.Add(cita);
             await _context.SaveChangesAsync();
 
+            var cosmetico = _context.Cosmetico.Find(1);
+            var servicio = _context.Servicio.FirstOrDefault(a => a.Nombre == cita.TipoServicio);
+            if (servicio != null && servicio.Precio >= 0.0)
+            {
+                totalCita = (double)servicio.Precio;
+            }
+            
             // Asociar cosméticos seleccionados
             foreach (var cosmeticoId in cosmeticoIds)
             {
-                var citaCosmetico = new CitaCosmetico
+                if (_context.Cosmetico.Find(cosmeticoId)!=null && _context.Cosmetico.Find(cosmeticoId).Cantidad > 0)
                 {
-                    CitaId = cita.Id,
-                    CosmeticoId = cosmeticoId
-                };
-                _context.CitaCosmetico.Add(citaCosmetico);
+                    var citaCosmetico = new CitaCosmetico
+                    {
+                        CitaId = cita.Id,
+                        CosmeticoId = cosmeticoId
+                    };
+                    _context.CitaCosmetico.Add(citaCosmetico);
+                }
+
+                cosmetico = _context.Cosmetico.Find(cosmeticoId);
+                if (cosmetico != null && cosmetico.Cantidad > 0)
+                {
+                    cosmetico.Cantidad--;
+                    totalCita += cosmetico.Precio;
+                }
+                _context.Cosmetico.Update(cosmetico);
             }
+            await _context.SaveChangesAsync();
+            cita.CostoTotal = totalCita;
+            _context.Cita.Update(cita);
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(VistaCita));
@@ -122,24 +146,42 @@ namespace AppPeluqueriaMVC.Controllers
             }
             try
             {
+                double totalCita = 0;
+
                 _context.Update(cita);
                 await _context.SaveChangesAsync();
 
-                // Eliminar todos los cosméticos actuales
-                var currentCosmeticos = _context.CitaCosmetico.Where(cc => cc.CitaId == cita.Id);
-                _context.CitaCosmetico.RemoveRange(currentCosmeticos);
-
-                // Agregar los nuevos cosméticos seleccionados
-                foreach (var cosmeticoId in cosmeticoIds)
+                var cosmetico = _context.Cosmetico.Find(1);
+                var servicio = _context.Servicio.FirstOrDefault(a => a.Nombre == cita.TipoServicio);
+                if (servicio != null && servicio.Precio >= 0.0)
                 {
-                    var citaCosmetico = new CitaCosmetico
-                    {
-                        CitaId = cita.Id,
-                        CosmeticoId = cosmeticoId
-                    };
-                    _context.CitaCosmetico.Add(citaCosmetico);
+                    totalCita = (double)servicio.Precio;
                 }
 
+                // Asociar cosméticos seleccionados
+                foreach (var cosmeticoId in cosmeticoIds)
+                {
+                    if (_context.Cosmetico.Find(cosmeticoId) != null && _context.Cosmetico.Find(cosmeticoId).Cantidad > 0)
+                    {
+                        var citaCosmetico = new CitaCosmetico
+                        {
+                            CitaId = cita.Id,
+                            CosmeticoId = cosmeticoId
+                        };
+                        _context.CitaCosmetico.Add(citaCosmetico);
+                    }
+
+                    cosmetico = _context.Cosmetico.Find(cosmeticoId);
+                    if (cosmetico != null && cosmetico.Cantidad > 0)
+                    {
+                        cosmetico.Cantidad--;
+                        totalCita += cosmetico.Precio;
+                    }
+                    _context.Cosmetico.Update(cosmetico);
+                }
+                await _context.SaveChangesAsync();
+                cita.CostoTotal = totalCita;
+                _context.Cita.Update(cita);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
